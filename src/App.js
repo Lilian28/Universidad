@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar bg="dark" variant="dark">
+          <Navbar bg="dark" variant="dark" fixed="top">
             <Navbar.Brand href="/">
               <img
                 alt=""
@@ -26,6 +26,8 @@ class App extends Component {
               <Nav.Link href="/noticias">Noticias</Nav.Link>
             </Nav>
           </Navbar>
+          <br />
+          <br />
           <br />
           <Container>
             <Route exact path="/" component={Home} />
