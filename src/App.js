@@ -19,7 +19,7 @@ class App extends Component {
                 height="30"
                 className="d-inline-block align-top"
               />
-              {' JSL'}
+              {'SJL App'}
             </Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link href="/denuncias">Denuncias</Nav.Link>
