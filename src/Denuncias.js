@@ -16,6 +16,7 @@ class Denuncias extends React.Component {
         this.timer = null;
     }
 
+    //Este llama al servicio web y trae las denuncias
     getDenuncias = () => {
         fetch('denuncias')
             .then(res => res.json().then(res => this.setState({ denuncias: res })))

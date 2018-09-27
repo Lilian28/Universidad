@@ -18,6 +18,7 @@ class Noticias extends React.Component {
         this.timer = null;
     }
 
+    //Este trae las noticias del servicio web
     getNoticias() {
         fetch('noticias')
             .then(res => res.json().then(res => this.setState({ noticias: res })))
@@ -32,6 +33,7 @@ class Noticias extends React.Component {
         this.setState({ show: false });
     }
 
+    //Guarda la noticia en el servicio web
     handleSave = (noticia) => {
         console.log(noticia);
         let formData = new FormData();
@@ -48,6 +50,7 @@ class Noticias extends React.Component {
         this.handleClose();
     }
 
+    //Evento cuando se hace click en el boton guardar del formulario
     handleSubmit(e) {
         e.preventDefault();
         const form = e.currentTarget;
@@ -82,6 +85,7 @@ class Noticias extends React.Component {
                         <hr />
                     </div>
                 )}
+                {/*Este es la ventana modal para el registro*/                }
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Form
                         action="/noticias"
