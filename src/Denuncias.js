@@ -32,6 +32,7 @@ class Denuncias extends React.Component {
                             <th>C&oacute;digo</th>
                             <th>Tipo</th>
                             <th>Descripci&oacute;n</th>
+                            <th>Imagen</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,6 +41,7 @@ class Denuncias extends React.Component {
                                 <td>{denuncia.codigo}</td>
                                 <td>{denuncia.tipo}</td>
                                 <td>{denuncia.descripcion}</td>
+                                <td><img src={'data:image/jpeg;base64,'+denuncia.foto}/></td>
                             </tr>
                         )}
                     </tbody>
